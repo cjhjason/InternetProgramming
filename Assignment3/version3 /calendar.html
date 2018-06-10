@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Name:Jinhao Chen; X500:chen4566; -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Places  Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaeZGKPRM_FCvDESCDUsg24XH3oIUQ9O0&libraries=places&callback=initMap"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<body>
+
+
+  <div id="Title">
+    <h1>My Calendar</h1>
+  </div>
+
+
+
+  <div id="Navigator">
+    <nav>
+      <ul id="NavigatorList">
+        <li><a href="calendar.html" id="MyCalendarLeft">My Calendar </a></li>
+        <li><a href="form.html" id="ForminputRight">Form input</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+  <div id="Scoll_Area">
+    <div id="Container">
+      <p id="EventNow"> Event For Today -1- 9:45 - 11:00 AM -- CSCL 1001 (001) - Nicholson Hall 155 -2- 1:00 - 2:15 PM -- CSCI 4131 (001) - Fraser Hall 101 -3- 3:35 - 4:25 PM -- CSCI 4061 (012) - Keller Hall 1-250</p>
+    </div>
+  </div>
+
+
+
+  <div id="CalendarTableDiv">
+    <table id="CalendarTable">
+      <tr>
+        <th>Mon</th>
+        <td>
+          <p class="eventtime">9:45 - 11:00 AM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCL 1001 (001) - Nicholson Hall 155</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=3341" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime">1:00 - 2:15 PM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4131 (001) - Fraser Hall 101</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=5678" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime">3:35 - 4:25 PM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4061 (012) - Keller Hall 1-250</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=4979" target="_blank">Moodle Course</a></td>
+      </tr>
+      <tr>
+        <th>Tue</th>
+        <td>
+          <p class="eventtime">9:45 - 11:00 AM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">GWSS 1005 (001) - Ford Hall 110</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=4589" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime">1:00 - 2:15 PM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4707 (001) - Keller Hall 3-210</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=6352" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime">4:00 - 5:15 PM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4061 (010) - Fraser Hall 102</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=4979" target="_blank">Moodle Course</a></td>
+      </tr>
+      <tr>
+        <th>Wed</th>
+        <td>
+          <p class="eventtime">9:45 - 11:00 AM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCL 1001 (001) - Nicholson Hall 155</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=3341" target="_blank">Moodle Course</a> </td>
+        <td>
+          <p class="eventtime">1:00 - 2:15 PMM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4131 (001) - Fraser Hall 101</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=5678" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime"></p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()"></p>
+        </td>
+      </tr>
+      <tr>
+        <th>Thu</th>
+        <td>
+          <p class="eventtime">9:45 - 11:00 AM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">GWSS 1005 (001) - Ford Hall 110</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=4589" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime">1:00 - 2:15 PM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4707 (001) - Keller Hall 3-210</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=6352" target="_blank">Moodle Course</a></td>
+        <td>
+          <p class="eventtime">4:00 - 5:15 PM</p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()">CSCI 4061 (010) - Fraser Hall 102</p> <a class="moodlelink" href="https://ay17.moodle.umn.edu/course/view.php?id=4979" target="_blank">Moodle Course</a></td>
+      </tr>
+      <tr>
+        <th>Fri</th>
+        <td>
+          <p class="eventtime"></p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()"></p>
+        </td>
+        <td>
+          <p class="eventtime"></p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()"></p>
+        </td>
+        <td>
+          <p class="eventtime"></p>
+          <p class="eventname" onclick="checkEvent(this)" onmouseover="setImageNode(this)" onmouseout="cleanImageNode()"></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Code no longer needed From assignment 2 -->
+  <!-- <div class="CalendarImage">
+    <img id="CalendarImageDisplay" src="CalendarImage/campus-mall.jpg" alt="" onclick="changeImage()">
+  </div> -->
+
+  <div class="twitter-timeline">
+    <a class="twitter-timeline" href="https://twitter.com/hashtag/UMN" data-widget-id="920427121566105600">#UMN</a>
+  </div>
+
+  <div id="mapInfo-div">
+    <form name="mapInfo" id="mapInfo">
+      <p>Radius:
+        <input type="number" id="radius"><input type="button" onclick="findResturants()" value="Find Nearby Resturants">
+      </p>
+      <p>Destination:
+        <input id="destination" type="text"><input type="button" onclick="getDirection()" value="Get Direction">
+      </p>
+      <p>
+        <input type="radio" name="transit" id="DRIVING" checked>Driving
+        <input type="radio" name="transit" id="BICYCLING">Bicycling
+        <input type="radio" name="transit" id="TRANSIT">Transit
+        <input type="radio" name="transit" id="WALKING">Walking
+      </p>
+    </form>
+  </div>
+  <div id="right-panel"></div>
+  <div id="map"></div>
+
+
+
+</body>
+
+</html>
+
+
+<!-- Browser:Chrome safari -->

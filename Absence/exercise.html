@@ -1,0 +1,29 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <input type="text" id="clock" >
+
+ <script type="text/javascript">
+ var int=setInterval("clock()",1000);
+
+ function clock(){
+ var datatoday = new Date();
+ var timenow = datatoday.toLocaleTimeString();   //localeTime!!! not localTime
+ document.getElementById("clock").value=timenow;
+ };
+
+
+ function cl(){
+ int =clearInterval(int);
+ $("clock").value="";
+ };
+
+ </script>
+
+ <button onclick="int=clearInterval(int)">Stop</button>
+ <button onclick="int=setInterval('clo()',1000)">start</button>
+ <button onclick="clock()">clear</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercise</title>
+  </head>
+  <body>
+    <p id="demo">JSON OBJECT EXAMPLE</p>
+    <script type="text/javascript">
+      var text = '{"name":"President Trump", "streetaddress":"1600 Pennsylvarnia ave", "phone":123123234}';
+      var obj = JSON.parse(text);
+      document.getElementById("demo").innerHTML =
+        obj.name + "<br>" +
+        obj.streetaddress + "<br>" +
+        obj.phone + "<br>";
+    </script>
+
+    <p id="result"> JSON Array Example</p>
+    <script type="text/javascript">
+      var nums = '["200", "400", "600", "800"]';
+      var array = JSON.parse(nums);
+      var sum = 0;
+      for (i = 0; i < array.length; i++){
+        sum += parseInt(array[i]);
+      }
+      document.getElementById("result").innerHTML = sum;
+    </script>
+
+
+
+  </body>
+</html>

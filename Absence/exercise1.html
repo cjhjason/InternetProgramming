@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Clock</title>
+    <script type="text/javascript">
+
+      var clock = function init(){
+        var date = new Date();
+        var timeString = date.toLocaleTimeString();
+        console.log(timeString);
+        document.getElementById(clock).innerHTML = timeString;
+      }
+      var int=setInterval(clock,1000);
+
+      document.addEventListener("load", clock, false);
+
+    </script>
+  </head>
+  <body>
+    <input type="text" id="clock" >
+    <button onclick="">Start</button>
+    <button onclick="">Stop</button>
+    <button onclick="">Clear</button>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+POST / HTTP/1.1
+Host: localhost:9001
+Connection: keep-alive
+Content-Length: 75
+Cache-Control: max-age=0
+Origin: http://localhost:9001
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+DNT: 1
+Referer: http://localhost:9001/form.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4
+Cookie: _ga=GA1.1.890803288.1509225288; _gid=GA1.1.1886799210.1509225288; forty_n_user=KzQ51KMlF59WlT5k3tuRSg~~; forty_n_t=1.3195fa.1509225325.1.1.1509225325.1509225325.4.0
+
+eventname=123&starttime=01%3A02&endtime=01%3A03&location=12&day=Mon&submit=

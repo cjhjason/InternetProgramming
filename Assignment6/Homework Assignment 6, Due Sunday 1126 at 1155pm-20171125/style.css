@@ -1,0 +1,209 @@
+
+
+/*Title and Navigator*/
+/*Center Title and Navigator*/
+#Title{
+  text-align: center;
+  font-size: 200%;
+}
+
+
+/*--------navigator--------*/
+
+
+#NavigatorList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: auto;
+    border-radius: 4px;
+}
+
+#NavigatorList li {
+    float: left;
+}
+
+#NavigatorList li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 14px;
+    text-decoration: none;
+}
+
+#NavigatorList li a:hover {
+    background-color:#45a049;
+}
+/*----------------------------------------------------------*/
+/*errormsg*/
+#errormsg{
+    color: red;
+}
+
+/*----------------------------------------------------------*/
+
+/*table*/
+
+
+#CalendarTableDiv table,#CalendarTableDiv td{
+    border: 5px solid #ddd;
+    text-align: left;
+    background-color:#747272;
+    text-align: center;
+}
+
+#CalendarTableDiv table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+
+#CalendarTableDiv td {
+    padding: 1px;
+}
+
+#CalendarTableDiv th {
+  border: 5px solid #ddd;
+  text-align: center;
+}
+
+#noevent{
+  text-align: center;
+  color: red;
+}
+
+
+/*a.moodlelink{
+  display: block;
+}*/
+
+/*Setting the time italic*/
+p.eventtime {
+    font-style: italic;
+}
+
+
+/*Bolding the event name and location*/
+p.eventname{
+  font-weight: 900;
+}
+
+/*hover*/
+#CalendarTableDiv td:hover{
+    background-color:#333;
+}
+#CalendarTableDiv th:hover{
+    background-color:#333;
+}
+
+
+/*------------------------------------------------------------*/
+/*Calendar Input*/
+#Input input[type=text],#Input select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Input input[type=time]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submitbutton {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+#loginsubmitbutton {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+
+
+#clearbutton {
+    width: 50%;
+    background-color: #db5959;
+    color: white;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+
+}
+
+
+/*------------------------------------------------------------*/
+/*Calendar Image*/
+.CalendarImage{
+    text-align: center;
+}
+#clickImage{
+  height: 100px;
+  width: 200px;
+}
+
+/*------------------------------------------------------------*/
+/*map*/
+
+#map {
+    height: 400px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mapInfo-div{
+    text-align:center;
+    position: relative;
+    width: 25em;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom: 20px
+}
+
+
+/*------------------------------------------------------------*/
+/*twitter*/
+.twitter-timeline{
+    height: 100px;
+    position:absolute;
+    top:300px;
+    width: 20%;
+    right: 0px;
+    z-index:2333;
+}
+
+/*div {
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    padding: 4px;
+}*/

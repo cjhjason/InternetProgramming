@@ -1,0 +1,111 @@
+div {
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    padding: 4px;
+}
+
+
+/*Title and Navigator*/
+/*Center Title and Navigator*/
+#Title{
+  text-align: center;
+  font-size: 200%;
+}
+
+
+/*--------navigator--------*/
+
+
+#NavigatorList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#NavigatorList li {
+    float: left;
+}
+
+#NavigatorList li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#NavigatorList li a:hover {
+    background-color: #111;
+}
+
+
+/*----------------------------------------------------------*/
+
+/*table*/
+#CalendarTable table,#CalendarTable td{
+    border: 5px solid #ddd;
+    text-align: left;
+    /*background-color: #80ebfc*/
+    background-color:grey
+}
+
+#CalendarTable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#CalendarTable td {
+    padding: 20px;
+}
+
+#CalendarTable th {
+  border: 5px solid #ddd;
+  text-align: center;
+}
+
+p.eventtime {
+    font-style: italic;
+}
+p.eventname{
+  font-weight: 900
+}
+
+/*------------------------------------------------------------*/
+/*Calendar Input*/
+#Input input[type=text],#Input select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Input input[type=time]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Input button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#Input button[type=submit] {
+    background-color: #45a049;
+}

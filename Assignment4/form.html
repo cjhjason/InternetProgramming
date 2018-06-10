@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form input</title>
+    <style media="screen">
+    div {
+        border-radius: 2px;
+        background-color: #f2f2f2;
+        padding: 4px;
+    }
+
+
+    /*Title and Navigator*/
+    /*Center Title and Navigator*/
+    #Title{
+      text-align: center;
+      font-size: 200%;
+    }
+
+
+    /*--------navigator--------*/
+
+
+    #NavigatorList {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    #NavigatorList li {
+        float: left;
+    }
+
+    #NavigatorList li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #NavigatorList li a:hover {
+        background-color: #111;
+    }
+
+
+    /*----------------------------------------------------------*/
+
+    /*table*/
+    #CalendarTable table,#CalendarTable td{
+        border: 5px solid #ddd;
+        text-align: left;
+        /*background-color: #80ebfc*/
+        background-color:grey
+    }
+
+    #CalendarTable table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #CalendarTable td {
+        padding: 20px;
+    }
+
+    #CalendarTable th {
+      border: 5px solid #ddd;
+      text-align: center;
+    }
+
+    p.eventtime {
+        font-style: italic;
+    }
+    p.eventname{
+      font-weight: 900
+    }
+
+    /*------------------------------------------------------------*/
+    /*Calendar Input*/
+    #Input input[type=text],#Input select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #Input input[type=time]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #Input button[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 16px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }
+
+    #Input button[type=submit] {
+        background-color: #45a049;
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+    <div id="Title">
+      <h1>Calendar Input</h1>
+    </div>
+
+    <div class="Navigator">
+      <nav>
+        <ul id="NavigatorList">
+          <li><a href="calendar.html">My Calendar </a></li>
+          <li><a href="form.html">Form input</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="Input">
+      <form class="" action="http://localhost:9001" method="post">
+
+      <p>Event Name<input name="eventname" type="text"></p>
+      <p>Start Time<input name="starttime" type="time"></p>
+      <p>End Time<input name="endtime" type="time"></p>
+      <p>Location<input name="location" type="text"></p>
+      <p>Week of the day
+        <select name = "day">
+            <option>Mon</option>
+            <option>Tue</option>
+            <option>Wed</option>
+            <option>Thu</option>
+            <option>Fri</option>
+          </select>
+      </p>
+      <p><button type="submit" name="submit">submit</button>
+
+
+      </form>
+    </div>
+
+  </body>
+</html>
