@@ -7,7 +7,7 @@
   <title>My Calendar</title>
   <link rel="stylesheet" href="style.css">
   <!-- Google Places  Maps -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaeZGKPRM_FCvDESCDUsg24XH3oIUQ9O0&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXX&libraries=places&callback=initMap"></script>
   <script type="text/javascript" src="script.js"></script>
 </head>
 
